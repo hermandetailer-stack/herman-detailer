@@ -66,11 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        setTimeout(() => {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'YOUR_SERVICE_ID',
+            'YOUR_TEMPLATE_ID',
+            this
+        ).then(() => {
             showNotification('Message sent successfully! We\'ll contact you soon.', 'success');
             contactForm.reset();
-        }, 500);
+        }).catch(() => {
+            showNotification('Failed to send message. Please try again.', 'error');
+        });
     });
 }
 
