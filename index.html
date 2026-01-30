@@ -12,7 +12,8 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo"><img src="./images/dark-logo-herman-lite.png" style ="height:70px;" alt="Herman Detailer Logo"></div>
+            <div class="logo"><img src="./images/dark-logo-herman-lite.png" style="height:70px;"
+                    alt="Herman Detailer Logo"></div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -95,12 +96,12 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <!--<section id="gallery" class="gallery">
         <div class="container">
             <h2>Our Work Gallery</h2>
             <p class="gallery-subtitle">See the transformation we've made to vehicles like yours</p>
 
-            <!-- Filter Buttons -->
+           
             <div class="filter-buttons">
                 <button class="filter-btn active" onclick="filterGallery('all')">All</button>
                 <button class="filter-btn" onclick="filterGallery('ppf')">PPF</button>
@@ -110,9 +111,9 @@
                 <button class="filter-btn" onclick="filterGallery('tinting')">Tinting</button>
             </div>
 
-            <!-- Gallery Grid -->
+           
             <div class="gallery-grid">
-                <!-- PPF Images -->
+                
                 <div class="gallery-item" data-category="ppf">
                     <div class="gallery-image">
                         <img src="https://via.placeholder.com/400x300?text=PPF+Paint+Protection+1"
@@ -135,7 +136,7 @@
                     </div>
                 </div>
 
-                <!-- Vehicle Wrapping Images -->
+                
                 <div class="gallery-item" data-category="wrapping">
                     <div class="gallery-image">
                         <img src="https://via.placeholder.com/400x300?text=Vehicle+Wrap+1" alt="Vehicle Wrapping">
@@ -166,7 +167,7 @@
                     </div>
                 </div>
 
-                <!-- Ceramic Coating Images -->
+                
                 <div class="gallery-item" data-category="ceramic">
                     <div class="gallery-image">
                         <img src="https://via.placeholder.com/400x300?text=Ceramic+Coating+1" alt="Ceramic Coating">
@@ -187,7 +188,7 @@
                     </div>
                 </div>
 
-                <!-- Polishing Images -->
+                
                 <div class="gallery-item" data-category="polishing">
                     <div class="gallery-image">
                         <img src="https://via.placeholder.com/400x300?text=Paint+Correction+1" alt="Paint Polishing">
@@ -208,7 +209,7 @@
                     </div>
                 </div>
 
-                <!-- Window Tinting Images -->
+               
                 <div class="gallery-item" data-category="tinting">
                     <div class="gallery-image">
                         <img src="https://via.placeholder.com/400x300?text=Window+Tinting+1" alt="Window Tinting">
@@ -230,7 +231,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Why Choose Us Section -->
     <section class="why-choose">
@@ -323,7 +324,7 @@
                     </div>
                     <div class="info-item">
                         <strong>📞 Phone:</strong>
-                        <p>+91 9656616081</p>
+                        <p>+91 8086766776</p>
                     </div>
                     <div class="info-item">
                         <strong>📧 Email:</strong>
@@ -378,6 +379,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YOUR_PUBLIC_KEY");
+    </script>
 </body>
 
 </html>
