@@ -70,8 +70,8 @@ if (contactForm) {
         e.preventDefault();
 
         emailjs.sendForm(
-            'YOUR_SERVICE_ID',
-            'YOUR_TEMPLATE_ID',
+            'service_2vttuib',
+            'template_b6f4qca',
             this
         ).then(() => {
             showNotification('Message sent successfully! We\'ll contact you soon.', 'success');
